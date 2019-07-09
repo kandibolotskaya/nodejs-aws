@@ -1,6 +1,5 @@
 import { Command } from '@oclif/command';
 
-import { ListObjectsOutput } from 'aws-sdk/clients/s3';
 import { AWSError } from 'aws-sdk';
 
 import aws, { bucketParams } from '../aws';
