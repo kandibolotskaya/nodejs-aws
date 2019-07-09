@@ -7,9 +7,9 @@ import { logWithPrettier, prettyJSON } from '../utils';
 import { ListObjectsOutput, Object as S3Object } from 'aws-sdk/clients/s3';
 
 export default class DeleteFiles extends Command {
-  static description = 'List an AWS buckets files that match a "filter" regex';
+  static description = 'Delete all files matching a regex from a bucket';
 
-  static examples = [`$ nodejs-aws upload-file image.jpg`];
+  static examples = [`$ nodejs-aws delete-files file-name`];
 
   static args = [
     { name: 'search', required: true, description: 'Search pattern' },

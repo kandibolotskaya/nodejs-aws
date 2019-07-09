@@ -8,7 +8,7 @@ import { logWithPrettier, prettyJSON } from '../utils';
 export default class SearchFiles extends Command {
   static description = 'List an AWS buckets files that match a "filter" regex';
 
-  static examples = [`$ nodejs-aws upload-file image.jpg`];
+  static examples = [`$ nodejs-aws search-files image-name`];
 
   static args = [
     { name: 'search', required: true, description: 'Search pattern' },
